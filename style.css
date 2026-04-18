@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px red solid;*/
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: rgb(240, 238, 238);
+    z-index: 2;
+}
+.logo {
+    flex-shrink: 0;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 600;
+}
+.nav-links {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    gap: 5rem;
+    font-size: 15px;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    background-color: rgb(204, 202, 202);
+}
+.nav-buttons {
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+}
+.btn {
+    display: inline-block;
+    border-radius: 25px;    
+    padding: 0.5rem 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+.primary {
+    background: black;
+    color: white;
+}
+.secondary {
+    border: 1px black solid;
+    color: black;
+}
+#section1 {
+    min-height: 75vh;
+    background-color: rgb(240, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1, .div2 {
+    text-align: center;
+    max-width: 60rem;
+}
+.div2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.div1 h1 {
+    font-family: cursive;
+    font-size: 3rem;
+}
+.div1 p {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(160, 158, 158);
+}
+
+
+
+#section2 {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 238, 238);
+}
+.div3 {
+    margin-top: 1rem;
+}
+.div3 img {
+    border-radius: 50px;
+}
