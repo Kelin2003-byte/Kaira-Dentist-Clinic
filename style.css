@@ -39,6 +39,7 @@ nav {
     padding: 0.5rem 4rem;
     border-radius: 2rem;
     background-color: rgb(204, 202, 202);
+    font-weight: 600;
 }
 .nav-buttons {
     display: flex;
@@ -150,6 +151,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.2rem;
     padding: 2rem 5rem;
+    align-items: stretch;
 }
 .div7 {
     background:rgb(240, 238, 238);
@@ -157,23 +159,110 @@ nav {
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .div7 img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     display: block;
+    flex-shrink: 0;
+    transform: scale(1);
+    transition: transform 0.9s ease;
 }
 .div7 h3 {
-    margin: 0.5rem 0 0.5rem;
+    margin: 0;
     font-family: cursive;
+}
+.div7:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+}
+.div7:hover img {
+    transform: scale(1.06);
 }
 .div8 {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .div7 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: rgb(114, 113, 113);
+    margin: 0.5rem 0 1rem;
+}
+.card-btn {
+    margin-top: auto;
+    align-self: flex-end;
+}
 
+
+
+#section4 {
+    display: block;
+    width: 100%;
+    min-height: 115vh;
+    background-color: #9EE5C8;
+    overflow: hidden;
+}
+.div9 h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.div10 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 2rem 5rem;
+}
+.div11 {
+    display: flex;
+    justify-content: center;
+    background-color: #bde2d3;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.div11 img {
+    max-width: 75%;
+    height: 75px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.div11:hover img {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.03);
+}
+.div11:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+}
+.div12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3.5rem;
+    background-color: #bde2d3;
+    border-radius: 7rem;
+}
+.div13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0.5rem 1.7rem;
+    color: white;
+    border-radius: 2rem 4rem;
+    max-width: 200px;
 }
