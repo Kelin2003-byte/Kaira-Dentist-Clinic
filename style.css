@@ -330,3 +330,55 @@ nav {
     margin-bottom: 0.5rem;
     color: rgb(114, 113, 113);
 }
+
+
+
+#section6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 110vh;
+    background-color: rgb(248, 205, 212);
+}
+.div18 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80rem;
+    width: 100%;
+    gap: 2rem;
+    margin: 0 auto;
+    align-items: center;
+}
+.div18 img {
+    width: 100%;
+    height: 90%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+.div17 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: center;
+    align-items: flex-start;
+}
+.div17 h1 {
+    font-family: cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.div17 p {
+    font-size: 1.2rem;
+    color: rgb(114, 113, 113);
+    padding-bottom: 0.5rem;
+}
+.div17 h2 {
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.fa-arrow-right {
+    color: white;
+}
