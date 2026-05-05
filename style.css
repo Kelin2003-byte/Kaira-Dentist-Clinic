@@ -462,8 +462,143 @@ nav {
 #section8 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     width: 100%;
     background-color: rgb(245, 240, 240);
+}
+.div23 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.div23 h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-family: cursive;
+}
+.faq {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.faq-item {
+    border: 1px solid rgb(114, 113, 113);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 1.6rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+}
+.faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.3s ease;
+    color: rgb(114, 113, 113);
+}
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+.faq-answer p {
+    margin: 0.5rem 0 1rem;
+    color: rgb(114, 113, 113);
+}
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+
+
+#section9 {
+    min-height: 80vh;
+    background-color: black;
+    max-width: 100%;
+}
+.div24 h2 {
+    color: white;
+    flex-shrink: 0;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: 600;
+}
+.div25 {
+    padding-top: 1rem;
+}
+.div25 h2 {
+    padding-bottom: 1rem;
+}
+.div25 h2, li {
+    color: white;
+}
+.div25 li {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.div26 {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 7rem;
+    max-width: 74.5rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.div28 {
+    max-width: 74.5rem;
+    margin: 0 auto;
+    width: 100%;
+}
+.div26 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.div26 li {
+    padding: 0.5rem 0;
+    margin: 0;
+}
+.div26 a {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+.div26 a i {
+    margin-right: 0.5rem;
+}
+.div27 {
+    color: white;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color:rgb(114, 113, 113);
+    margin: 2rem 0;
+}
+.div25 ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    text-decoration: none;
+}
+.div25 ul li a i {
+    width: 1.2rem;
+    text-align: left;
 }
