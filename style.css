@@ -8,6 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    background-color: rgba(240, 238, 238, 0.7);
 }
 a {
     text-decoration: none;
@@ -43,6 +44,12 @@ nav {
     background-color: rgb(204, 202, 202);
     font-weight: 600;
 }
+.nav-links li {
+    transition: 0.4s;
+}
+.nav-links li:hover {
+    transform: translateY(-4px) scale(1.03);
+}
 .nav-buttons {
     display: flex;
     margin-left: auto;
@@ -54,6 +61,10 @@ nav {
     padding: 0.5rem 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
+    transition: 0.4s;
+}
+.btn:hover {
+    transform: translateY(-4px) scale(1.02);
 }
 .primary {
     background: black;
@@ -274,6 +285,10 @@ nav {
     color: white;
     border-radius: 2rem 4rem;
     max-width: 200px;
+    transition: 0.4s;
+}
+.div13:hover {
+    transform: translateY(-4px) scale(1.03);
 }
 
 
@@ -553,6 +568,10 @@ nav {
 .div25 li {
     text-decoration: none;
     padding: 0.5rem;
+    transition: 0.4s;
+}
+.div25 li:hover {
+    transform: translateY(-4px) scale(1.03);
 }
 .div26 {
     display: grid;
@@ -601,4 +620,27 @@ hr {
 .div25 ul li a i {
     width: 1.2rem;
     text-align: left;
+}
+
+
+.scroll-section {
+    opacity: 0;
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    will-change: transform, opacity;
+}
+.scroll-section.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.left-slide {
+    transform: translateX(-100px);
+}
+.right-slide {
+    transform: translateX(100px);
+}
+.left-slide.show, .right-slide.show {
+    transform: translateX(0);
+}
+.slide-up {
+    transform: translateY(100px);
 }
