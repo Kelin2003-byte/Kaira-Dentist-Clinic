@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*outline: 1px red solid;*/
+    outline: 1px red solid;
 }
 html, body {
     background-color: rgb(240, 238, 238);
@@ -28,6 +28,7 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     z-index: 100;
     top: 0;
+    flex-wrap: wrap;
 }
 .logo {
     flex-shrink: 0;
@@ -123,6 +124,178 @@ nav {
     font-size: 2rem;
     color: gold;
     line-height: 1;
+}
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.hamburger .menu-icon {
+    color: black;
+    font-size: 1.5rem;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        position: relative;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        flex: 1;
+    }
+    .hamburger {
+        display: flex;
+        right: 2rem;
+        top: 1.5rem;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+    }
+    .menu-icon {
+        position: absolute;
+        font-size: 2rem;
+        color: black;
+        transition: opacity 0.3s ease;
+    }
+    .open-icon {
+        opacity: 1;
+    }
+    .close-icon {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .nav-buttons, .nav-links {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+        background-color: transparent;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        padding: 0;
+        min-height: 0;
+        overflow: hidden;
+        position: relative;
+        left: auto;
+        transform: none;
+        transition: opacity 0.2s ease, max-height 0.5s ease, margin 0.5s ease, padding 0.5s ease, visibility 0s linear 0.5s;
+    }
+    .nav-links a {
+        color: black;
+    }
+    .nav-links.active, .nav-buttons.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 250px;
+        transition: max-height 0.5s ease, margin 0.5s ease, padding 0.5s ease, opacity 0.4s ease 0.1s, visibility 0s linear 0s;
+    }
+    .nav-links {
+        order: 3;
+    }
+    .nav-links.active {
+        margin-top: 4rem;
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    .nav-buttons {
+        order: 5;
+    }
+    .nav-buttons.active {
+        margin-top: 0rem;
+        padding-bottom: 1rem;
+    }
+    .nav-buttons .btn {
+        background-color: black;
+        color: white;
+        width: 70%;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 2rem;
+    }
+    .open-icon.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .close-icon.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #section1, #section2 {
+        min-height: 35svh;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+    .div1 h1 {
+        font-size: 2.3rem;
+    }
+    .div1 {
+        margin-top: 4rem;
+    }
+    .div1 p {
+        font-size: 1rem;
+    }
+    .div2 {
+        flex-wrap: wrap;
+    }
+    #section1 {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        padding-bottom: 0;
+        align-items: flex-end;
+    }
+    #section2 {
+        align-items: center;
+        padding-top: 0;
+    }
+    .div3 {
+        width: 100%;
+        display: flex;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .div3 img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
