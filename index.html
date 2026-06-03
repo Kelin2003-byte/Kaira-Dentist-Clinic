@@ -25,6 +25,11 @@
                 <a href="" class="btn primary">Book Now</a>
                 <a href="" class="btn secondary">Sign In</a>
             </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars menu-icon open-icon"></i>
+                <i class="fa-solid fa-xmark menu-icon close-icon"></i>
+            </div>
     </nav>
 
     <section id="section1" class="scroll-section left-slide">
@@ -161,7 +166,7 @@
                 <img src="./whitening.jfif" alt="">
                 <div class="div22">
                     <h3>Teeth Whitening</h3>
-                    <p>A brighter smile in 90 minutes? It's easier (and mo...</p>
+                    <p>A brighter smile in 90 minutes? It's easier and mo...</p>
                 </div>
             </div>
 
@@ -302,5 +307,31 @@
 
     revealSections();
     </script>
-</body>
+
+<script>
+
+const hamburger=document.querySelector('.hamburger');
+
+const navLinks=document.querySelector('.nav-links');
+
+const navButtons=document.querySelector('.nav-buttons');
+
+const openIcon=document.querySelector('.open-icon');
+
+const closeIcon=document.querySelector('.close-icon');
+
+
+hamburger.addEventListener('click',()=>{
+
+    navLinks.classList.toggle('active');
+
+    navButtons.classList.toggle('active');
+
+    openIcon.classList.toggle('hide');
+
+    closeIcon.classList.toggle('show');
+
+});
+
+</script></body>
 </html>
