@@ -31,7 +31,7 @@ nav {
 }
 .logo {
     flex-shrink: 0;
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 30px;
     font-weight: 600;
 }
@@ -95,7 +95,7 @@ nav {
     gap: 2rem;
 }
 .div1 h1 {
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 3rem;
 }
 .div1 p {
@@ -166,7 +166,7 @@ nav {
     align-items: center;
 }
 .div5 h1 {
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 3rem;
     text-align: center;
 }
@@ -205,7 +205,7 @@ nav {
 }
 .div7 h3 {
     margin: 0;
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 .div7:hover {
     box-shadow: 0 15px 30px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
@@ -400,7 +400,7 @@ nav {
     align-items: flex-start;
 }
 .div17 h1 {
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 3.5rem;
     font-weight: 400;
 }
@@ -410,7 +410,7 @@ nav {
     padding-bottom: 0.5rem;
 }
 .div17 h2 {
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.3rem;
     font-weight: 200;
 }
@@ -469,7 +469,7 @@ nav {
 }
 .div21 h3 {
     margin: 0;
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 .div21:hover {
     box-shadow: 0 15px 30px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
@@ -511,7 +511,7 @@ nav {
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 .faq {
     max-width: 50rem;
@@ -570,12 +570,12 @@ nav {
 .div24 h2 {
     color: white;
     flex-shrink: 0;
-    font-family: cursive;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 50px;
     font-weight: 600;
 }
 .div25 {
-    padding-top: 1rem;
+    padding-top: 0rem;
 }
 .div25 h2 {
     padding-bottom: 1rem;
@@ -598,6 +598,7 @@ nav {
     max-width: 74.5rem;
     margin: 0 auto;
     padding: 2rem 0;
+    align-items: start;
 }
 .div28 {
     max-width: 74.5rem;
@@ -645,6 +646,7 @@ hr {
     opacity: 0;
     transition: opacity 1.2s ease, transform 1.2s ease;
     will-change: transform, opacity;
+    width: 100%;
 }
 .scroll-section.show {
     opacity: 1;
@@ -677,13 +679,14 @@ hr {
     }
     .hamburger {
         display: flex;
+        position: absolute;
         right: 2rem;
-        top: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
         width: 40px;
         height: 40px;
         justify-content: center;
         align-items: center;
-        position: absolute;
         cursor: pointer;
     }
     .menu-icon {
@@ -788,7 +791,6 @@ hr {
         display: flex;
         margin: 0 auto;
         padding-bottom: 0;
-        align-items: flex-end;
         flex-direction: column;
         margin-bottom: 8rem;
     }
@@ -988,9 +990,69 @@ hr {
     }
     .div26 {
         max-width: 95%;
-        gap: 1rem;
+        gap: 2.3rem;
     }
     .div24 h2{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+    }
+    .div4 {
+        display: inline-flex;
+        flex-direction: row;
+        max-width: 100%;
+        white-space: nowrap;
+        justify-content: center;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .div4 .stars {
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .div4 .star-review {
+        font-size: 0.85rem;
+        line-height: 1;
+        position: static;
+        top: 0;
+    }
+    .left-slide, .right-slide {
+        transform: translateY(30px);
+    }
+    .left-slide.show, .right-slide.show {
+        transform: translateY(0);
+    }
+    .div1 {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .div1 h1 {
+        font-size: 1.8rem;
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #section1 {
+        min-height: 45vh;
+        padding: 2rem 2rem 2rem 2rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+    .div9 h1 {
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div23 h1 {
+        font-size: 2rem;
+    }
+    .faq {
+        max-width: 90%;
+    }
+    .faq-question {
+        font-size: 0.75rem;
+    }
+    .faq-answer {
+        font-size: 0.85rem;
     }
 }
