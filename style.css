@@ -880,6 +880,7 @@ hr {
     .div26 {
         gap: 5rem;
         max-width: 53rem;
+        align-items: start;
     }
     .div27 {
         text-align: center;
